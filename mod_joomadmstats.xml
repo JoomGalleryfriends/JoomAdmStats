@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="administrator" method="upgrade">
+  <name>mod_joomadmstats</name>
+  <author>JoomGallery::Project Team</author>
+  <creationDate>01.08.2018</creationDate>
+  <copyright>(C) 2018 - 2018 JoomGallery::Project Team</copyright>
+  <license>This module is released under the GNU/GPL License</license>
+  <authorEmail>team@joomgallery.net</authorEmail>
+  <authorUrl>www.joomgallery.net</authorUrl>
+  <version>3.0 Beta</version>
+  <description>MOD_JOOMADMSTATS_DESC</description>
+  <files>
+    <filename module="mod_joomadmstats">mod_joomadmstats.php</filename>
+    <filename>helper.php</filename>
+    <filename>index.html</filename>
+    <filename>tmpl/default.php</filename>
+    <filename>tmpl/index.html</filename>
+  </files>
+  <languages>
+    <language tag="en-GB">language/en-GB/en-GB.mod_joomadmstats.ini</language>
+    <language tag="en-GB">language/en-GB/en-GB.mod_joomadmstats.sys.ini</language>
+    <language tag="de-DE">language/de-DE/de-DE.mod_joomadmstats.ini</language>
+    <language tag="de-DE">language/de-DE/de-DE.mod_joomadmstats.sys.ini</language>
+  </languages>
+  <config>
+    <fields name="params">
+      <fieldset name="basic">
+        <field class="btn-group" name="pics_published" type="radio" default="1" description="MOD_JOOMADMSTATS_PICSPUBLISHED_DESC" label="MOD_JOOMADMSTATS_PICSPUBLISHED_LBL">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field class="btn-group" name="pics_unpublished" type="radio" default="1" description="MOD_JOOMADMSTATS_PICSUNPUBLISHED_DESC" label="MOD_JOOMADMSTATS_PICSUNPUBLISHED_LBL">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field class="btn-group" name="cats_published" type="radio" default="1" description="MOD_JOOMADMSTATS_CATSPUBLISHED_DESC" label="MOD_JOOMADMSTATS_CATSPUBLISHED_LBL">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field class="btn-group" name="cats_unpublished" type="radio" default="1" description="MOD_JOOMADMSTATS_CATSUNPUBLISHED_DESC" label="MOD_JOOMADMSTATS_CATSUNPUBLISHED_LBL">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field class="btn-group" name="comments_published" type="radio" default="0" description="MOD_JOOMADMSTATS_COMMENTSPUBLISHED_DESC" label="MOD_JOOMADMSTATS_COMMENTSPUBLISHED_LBL">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field class="btn-group" name="comments_unpublished" type="radio" default="0" description="MOD_JOOMADMSTATS_COMMENTSUNPUBLISHED_DESC" label="MOD_JOOMADMSTATS_COMMENTSUNPUBLISHED_LBL">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field class="btn-group" name="all_hits" type="radio" default="0" description="MOD_JOOMADMSTATS_HITS_DESC" label="MOD_JOOMADMSTATS_HITS_LBL">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field class="btn-group" name="all_votes" type="radio" default="0" description="MOD_JOOMADMSTATS_VOTES_DESC" label="MOD_JOOMADMSTATS_VOTES_LBL">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field class="btn-group" name="all_nametags" type="radio" default="0" description="MOD_JOOMADMSTATS_NAMETAGS_DESC" label="MOD_JOOMADMSTATS_NAMETAGS_LBL">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+      </fieldset>
+      <fieldset name="advanced">
+        <field
+          name="layout"
+          type="modulelayout"
+          label="JFIELD_ALT_LAYOUT_LABEL"
+          description="JFIELD_ALT_MODULE_LAYOUT_DESC" 
+        />
+        <field
+          name="moduleclass_sfx"
+          type="textarea"
+          label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+          description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+          rows="3"
+        />
+      </fieldset>
+    </fields>
+  </config>
+</extension>
