@@ -55,7 +55,7 @@ class modJoomAdmStatsHelper
           ->where('c.access IN ('.$authorised_viewlevels.')');
       $db->setQuery($query);
       $elems['picspublished']->outputresult = $db->loadResult();
-      $elems['picspublished']->icon = 'icon-image';
+      $elems['picspublished']->icon = 'icon-image text-success';
     }
 
     // Get parameters for unpublished images and fill array element
@@ -74,7 +74,7 @@ class modJoomAdmStatsHelper
           ->where('c.access IN ('.$authorised_viewlevels.')');
       $db->setQuery($query);
       $elems['picunspublished']->outputresult = $db->loadResult();
-      $elems['picunspublished']->icon = 'icon-image';
+      $elems['picunspublished']->icon = 'icon-image text-error';
     }
 
     // Get parameters for published categories and fill array element
@@ -90,7 +90,7 @@ class modJoomAdmStatsHelper
           ->where('c.access IN ('.$authorised_viewlevels.')');
       $db->setQuery($query);
       $elems['catspublished']->outputresult = $db->loadResult();
-      $elems['catspublished']->icon = 'icon-folder-3';
+      $elems['catspublished']->icon = 'icon-folder-3 text-success';
     }
 
     // Get parameters for unpublished categories and fill array element
@@ -106,7 +106,7 @@ class modJoomAdmStatsHelper
           ->where('c.access IN ('.$authorised_viewlevels.')');
       $db->setQuery($query);
       $elems['catunspublished']->outputresult = $db->loadResult();
-      $elems['catunspublished']->icon = 'icon-folder-3';
+      $elems['catunspublished']->icon = 'icon-folder-3 text-error';
     }
 
     // Get parameters for published comments and fill array element
@@ -128,7 +128,7 @@ class modJoomAdmStatsHelper
           ->where('c.access IN ('.$authorised_viewlevels.')');
       $db->setQuery($query);
       $elems['commentspublished']->outputresult = $db->loadResult();
-      $elems['commentspublished']->icon = 'icon-comments-2';
+      $elems['commentspublished']->icon = 'icon-comments-2 text-success';
     }
 
     // Get parameters for unpublished comments and fill array element
@@ -149,7 +149,7 @@ class modJoomAdmStatsHelper
           ->where('c.access IN ('.$authorised_viewlevels.')');
       $db->setQuery($query);
       $elems['commentsunpublished']->outputresult = $db->loadResult();
-      $elems['commentsunpublished']->icon = 'icon-comments-2';
+      $elems['commentsunpublished']->icon = 'icon-comments-2 text-error';
     }
 
     // Get parameters for hits and fill array element
